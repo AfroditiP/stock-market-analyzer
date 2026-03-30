@@ -1,26 +1,15 @@
-# 📈 Stock Market Trend Analyzer
+# Stock Market Trend Analyzer
 
-A complete data analysis project that collects, analyzes, and predicts stock prices 
-for 5 major companies (AAPL, TSLA, MSFT, GOOGL, AMZN) from 2020 to 2024.
+Analysis of 5 major stocks (AAPL, TSLA, MSFT, GOOGL, AMZN) from 2020 to 2024, covering exploratory data analysis, technical indicators, machine learning prediction and SQL querying.
 
-## 🛠️ Tech Stack
-- Python
-- Pandas
-- Matplotlib / Seaborn
-- Scikit-learn
-- SQLite
+## Tech Stack
+Python, Pandas, Matplotlib, Seaborn, Scikit-learn, SQLite
 
-## 🤖 Machine Learning
-- **Model:** Linear Regression
-- **Features:** SMA_20, SMA_50, SMA_200, RSI, MACD, Bollinger Bands
-- **Why Linear Regression:** Technical indicators have a strong linear relationship with stock prices, making it an ideal and interpretable baseline model
-- **Result:** MAE of $2.28 — predicting Apple's price within $2.28 on average
+## Machine Learning
+Linear Regression model trained on technical indicators (SMA, RSI, MACD, Bollinger Bands) to predict Apple's closing price. Achieved a Mean Absolute Error of $2.28 on unseen data from 2024.
 
-## 🗄️ SQL Analysis
-- Built a SQLite database with all 5 stocks
-- Queried highest and lowest price days
-- Built yearly price summaries
-- Joined multiple tables to compare stocks side by side
+## SQL Analysis
+All stock data was loaded into a SQLite database and queried to extract insights such as yearly price summaries, highest volume trading days, and cross-stock comparisons.
 
-## 📌 Data Source
-All stock data is fetched live from Yahoo Finance using the `yfinance` library.
+## Data Source
+Historical stock data fetched via the `yfinance` library from Yahoo Finance.
